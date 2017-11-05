@@ -1,5 +1,5 @@
 const clientId = 'f595183f55e34c4a8f600bd999357fc8';
-const redirectURI = 'http://turntables.surge.sh/';
+const redirectURI = 'http://localhost:3000/';
 let accessToken = '';
 let expiresIn = '';
 
