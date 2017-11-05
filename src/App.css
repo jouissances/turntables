@@ -1,0 +1,54 @@
+body,
+html,
+#root {
+    height: 100%;
+}
+
+html {
+    font-size: 18px;
+}
+
+h1 {
+    padding: .77rem 0;
+    background-color: #ea8636;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 1.88rem;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: lowercase;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.55rem;
+    font-weight: 600;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #6f6f6f;
+}
+
+.App {
+    height: 100%;
+    padding: 0 17% 10% 17%;
+    background-image: url('./background.jpg');
+    background-size: stretch;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+
+.App-playlist {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1020px) {
+    .App-playlist {
+        align-items: center;
+        flex-direction: column;
+    }
+}
