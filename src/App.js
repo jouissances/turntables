@@ -49,7 +49,6 @@ class App extends React.Component {
             searchResults: []
         });
         this.updatePlaylistName('My Playlist');
-        console.info(trackURIs);
     }
 
     search(term) {
