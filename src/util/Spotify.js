@@ -38,13 +38,14 @@ const Spotify = {
                         name: track.name,
                         artist: track.artists[0].name,
                         album: track.album.name,
+                        preview: track.preview_url,
                         uri: track.uri
                     }
                 })
             }
         })   
     },
-    
+
     savePlaylist(name, trackURIs) {
         if (name.length === 0 || trackURIs.length === 0) return;
         let userURL = 'https://api.spotify.com/v1/me';
