@@ -1,5 +1,5 @@
 const clientId = 'f595183f55e34c4a8f600bd999357fc8';
-const redirectURI = 'http://swanky-oven.surge.sh';
+const redirectUri = 'http://swanky-oven.surge.sh';
 let accessToken = '';
 let expiresIn = '';
 
@@ -17,7 +17,7 @@ const Spotify = {
             window.setTimeout(() => accessToken = '', expiresIn * 1000);
             window.history.pushState('Access Token', null, '/');
         } else {
-            window.location = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectURI}`;
+            window.location = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectUri}`;
         }
     },
 
@@ -83,6 +83,5 @@ const Spotify = {
             })
     }
 }
-
 
 export default Spotify;
